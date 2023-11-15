@@ -15,7 +15,7 @@
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/calendar"
+            android:text="@string/welcome_home"
             android:textColor="@color/hot_pink"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"

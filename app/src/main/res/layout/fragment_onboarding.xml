@@ -34,14 +34,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageSwitcher
-            android:id="@+id/petImageSwitcher"
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_margin="16dp"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="16dp"
+            app:iss_auto_cycle="true"
+            app:iss_period="1000"
+            app:iss_delay="1000"
+            app:iss_text_align="CENTER"
             app:layout_constraintBottom_toTopOf="@+id/nextBtn"
             app:layout_constraintEnd_toStartOf="@+id/nextOnbBtn"
             app:layout_constraintStart_toEndOf="@+id/prevOnbBtn"
@@ -64,7 +66,6 @@
             app:layout_constraintBottom_toTopOf="@+id/nextBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

@@ -21,18 +21,18 @@ class SharedPreferences(context: Context) {
         const val PERIOD_LENGTH = 4
 
         //здесь хранить избранное
-        private val FAVS: String = ""
+        private val PETS: String = ""
 
         fun <Pet> setList(list: List<Pet>){
             val json: String = Gson().toJson(list)
             val editor = sharedPref?.edit()
-            editor?.putString(FAVS, json)
+            editor?.putString(PETS, json)
             editor?.apply()
         }
 
         fun getList(): List<Pet> {
             val arrayItems: List<Pet>
-            val serializedObject: String? = sharedPref?.getString(FAVS, "")
+            val serializedObject: String? = sharedPref?.getString(PETS, "")
             return if (!serializedObject.isNullOrEmpty()) {
                 val gson = Gson()
                 val type: Type = object : TypeToken<List<Pet?>?>() {}.type

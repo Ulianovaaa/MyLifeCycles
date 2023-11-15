@@ -39,7 +39,10 @@ dependencies {
     //гсон
     implementation ("com.google.code.gson:gson:2.9.0")
 
+    //слайдер с картинками
     implementation ("com.github.denzcoskun:ImageSlideshow:0.1.2")
+    //либа не работает
+//    implementation ("com.github.smarteist:autoimageslider:1.3.9")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
